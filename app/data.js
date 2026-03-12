@@ -312,5 +312,5 @@ export const contact = {
   phone: "+251 974 640 683",
   location: "Addis Ababa, Ethiopia",
   linkedin: "https://www.linkedin.com/in/fitsum-m-25a01a185/",
-  github: "https://github.com/"
+  github: "https://github.com/fitsumM12/"
 };
