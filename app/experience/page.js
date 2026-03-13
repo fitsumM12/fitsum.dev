@@ -3,9 +3,14 @@ import { experience } from "../data";
 export default function ExperiencePage() {
   return (
     <section className="section">
-      <div className="sectionTitle">
-        <h2>Experience</h2>
-        <p>Recent roles delivering AI-powered products and full-stack platforms.</p>
+      <div className="sectionTitle withArt">
+        <div>
+          <h2>Experience</h2>
+          <p>Recent roles delivering AI-powered products and full-stack platforms.</p>
+        </div>
+        <div className="sectionArt">
+          <img src="/section-experience.svg" alt="Experience timeline illustration" />
+        </div>
       </div>
       <div className="stack timeline">
         {experience.map((role) => (

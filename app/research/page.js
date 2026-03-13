@@ -3,9 +3,14 @@ import { publications } from "../data";
 export default function ResearchPage() {
   return (
     <section className="section">
-      <div className="sectionTitle">
-        <h2>Research Exposure</h2>
-        <p>Selected publications and research work in medical imaging AI.</p>
+      <div className="sectionTitle withArt">
+        <div>
+          <h2>Research Exposure</h2>
+          <p>Selected publications and research work in medical imaging AI.</p>
+        </div>
+        <div className="sectionArt">
+          <img src="/section-research.svg" alt="Research illustration" />
+        </div>
       </div>
       <div className="stack timeline">
         {publications.map((pub) => (

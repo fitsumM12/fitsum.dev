@@ -3,9 +3,14 @@ import { education } from "../data";
 export default function EducationPage() {
   return (
     <section className="section">
-      <div className="sectionTitle">
-        <h2>Education</h2>
-        <p>Academic foundation in computer science and engineering.</p>
+      <div className="sectionTitle withArt">
+        <div>
+          <h2>Education</h2>
+          <p>Academic foundation in computer science and engineering.</p>
+        </div>
+        <div className="sectionArt">
+          <img src="/section-education.svg" alt="Education illustration" />
+        </div>
       </div>
       <div className="stack timeline">
         {education.map((item) => (

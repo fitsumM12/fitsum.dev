@@ -1,0 +1,14 @@
+<svg width="820" height="420" viewBox="0 0 820 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="eduGlow" x1="80" y1="60" x2="740" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0B429"/>
+      <stop offset="1" stop-color="#45D6B6"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="772" height="372" rx="56" fill="#0D0F12"/>
+  <rect x="24" y="24" width="772" height="372" rx="56" stroke="url(#eduGlow)" stroke-width="4"/>
+  <path d="M220 190L410 120L600 190L410 260L220 190Z" fill="#14181F" stroke="#F0B429" stroke-width="4"/>
+  <path d="M280 220V300C280 320 330 336 410 336C490 336 540 320 540 300V220" stroke="#45D6B6" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="610" cy="120" r="12" fill="#45D6B6"/>
+  <path d="M610 132V210" stroke="#F0B429" stroke-width="6" stroke-linecap="round"/>
+</svg>

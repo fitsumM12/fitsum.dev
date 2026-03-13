@@ -1,0 +1,20 @@
+<svg width="820" height="420" viewBox="0 0 820 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skillsGlow" x1="80" y1="60" x2="740" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0B429"/>
+      <stop offset="1" stop-color="#45D6B6"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="772" height="372" rx="56" fill="#0D0F12"/>
+  <rect x="24" y="24" width="772" height="372" rx="56" stroke="url(#skillsGlow)" stroke-width="4"/>
+  <rect x="120" y="130" width="200" height="60" rx="18" fill="#14181F" stroke="#F0B429" stroke-width="4"/>
+  <rect x="120" y="210" width="200" height="60" rx="18" fill="#14181F" stroke="#45D6B6" stroke-width="4"/>
+  <rect x="120" y="290" width="200" height="60" rx="18" fill="#14181F" stroke="#F0B429" stroke-width="4"/>
+  <rect x="360" y="150" width="160" height="24" rx="12" fill="#F0B429"/>
+  <rect x="360" y="190" width="200" height="24" rx="12" fill="#45D6B6"/>
+  <rect x="360" y="230" width="240" height="24" rx="12" fill="#F0B429"/>
+  <rect x="360" y="270" width="180" height="24" rx="12" fill="#45D6B6"/>
+  <circle cx="650" cy="210" r="74" fill="url(#skillsGlow)" fill-opacity="0.16"/>
+  <path d="M620 210H680" stroke="#F0B429" stroke-width="8" stroke-linecap="round"/>
+  <path d="M650 180V240" stroke="#45D6B6" stroke-width="8" stroke-linecap="round"/>
+</svg>

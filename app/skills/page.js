@@ -3,9 +3,14 @@ import { skills } from "../data";
 export default function SkillsPage() {
   return (
     <section className="section">
-      <div className="sectionTitle">
-        <h2>Technical Expertise</h2>
-        <p>Focused strengths across AI, software engineering, and scalable data systems.</p>
+      <div className="sectionTitle withArt">
+        <div>
+          <h2>Technical Expertise</h2>
+          <p>Focused strengths across AI, software engineering, and scalable data systems.</p>
+        </div>
+        <div className="sectionArt">
+          <img src="/section-skills.svg" alt="Skills overview illustration" />
+        </div>
       </div>
       <div className="skillsGrid">
         {skills.map((group) => (
