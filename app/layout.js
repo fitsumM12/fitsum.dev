@@ -1,6 +1,6 @@
 import "./globals.css";
-import Link from "next/link";
 import { CursorGlow } from "./cursor-glow";
+import Nav from "./Nav";
 
 export const metadata = {
   title: "Fitsum Mesfin | AI & Software Engineer",
@@ -24,16 +24,7 @@ export default function RootLayout({ children }) {
       <body>
         <CursorGlow />
         <header className="shell">
-          <nav className="nav tabs">
-            <span className="logo">FM</span>
-            <div className="navLinks">
-              {navLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="tabLink">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </nav>
+          <Nav links={navLinks} />
         </header>
         <main className="shell">{children}</main>
       </body>

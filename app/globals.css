@@ -132,6 +132,7 @@ ul {
   position: sticky;
   top: 16px;
   z-index: 10;
+  flex-wrap: wrap;
 }
 
 .shell {
@@ -170,6 +171,15 @@ ul {
   border-radius: 999px;
   background: color-mix(in srgb, var(--accent) 18%, transparent);
   border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoMark {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
 .navLinks {
@@ -197,6 +207,29 @@ ul {
 
 .tabLink:hover {
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+.hamburger {
+  display: none;
+  width: 42px;
+  height: 38px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.hamburger span {
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 999px;
+  display: block;
 }
 
 .heroContent {
@@ -705,7 +738,52 @@ h1 {
   }
 }
 
+@media (max-width: 768px) {
+  .page {
+    gap: 56px;
+  }
+
+  .nav {
+    padding: 12px 18px;
+    gap: 14px;
+  }
+
+  .navLinks {
+    font-size: 13px;
+    gap: 12px;
+  }
+
+  .heroContent {
+    gap: 32px;
+  }
+
+  .summary {
+    font-size: 15px;
+  }
+
+  .heroCard {
+    padding: 22px;
+    animation: none;
+  }
+
+  .cardHeader,
+  .orgRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .metrics,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
+  .nav {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
   .ctaRow {
     flex-direction: column;
     align-items: flex-start;
@@ -717,5 +795,75 @@ h1 {
 
   .nav {
     position: static;
+  }
+
+  .hamburger {
+    display: inline-flex;
+  }
+
+  .navLinks {
+    width: auto;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 8px;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 520px) {
+  .shell {
+    width: 94vw;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logoMark {
+    width: 18px;
+    height: 18px;
+  }
+
+  .navLinks {
+    padding-bottom: 0;
+  }
+
+  .tabLink {
+    padding: 6px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .heroContent {
+    margin-top: 32px;
+  }
+
+  .linkRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .iconButton,
+  .primary,
+  .ghost {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timeline {
+    padding-left: 10px;
+  }
+
+  .timelineItem {
+    gap: 10px;
+  }
+
+  .card ul {
+    font-size: 14px;
   }
 }
