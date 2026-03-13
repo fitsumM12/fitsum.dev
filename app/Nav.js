@@ -10,7 +10,7 @@ export default function Nav({ links }) {
     <nav className="nav tabs">
       <span className="logo">
         {/* <img className="logoMark" src="/icon.svg" alt="" aria-hidden="true" /> */}
-        FM
+        Fitsum
       </span>
       <button
         type="button"

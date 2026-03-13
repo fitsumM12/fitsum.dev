@@ -1,0 +1,19 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lawGlow" x1="70" y1="50" x2="570" y2="370" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0B429"/>
+      <stop offset="1" stop-color="#45D6B6"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="592" height="372" rx="44" fill="#0D0F12"/>
+  <rect x="24" y="24" width="592" height="372" rx="44" stroke="url(#lawGlow)" stroke-width="4"/>
+  <rect x="140" y="140" width="220" height="150" rx="20" fill="#14181F" stroke="#F0B429" stroke-width="4"/>
+  <rect x="170" y="120" width="160" height="40" rx="12" fill="#14181F" stroke="#45D6B6" stroke-width="4"/>
+  <circle cx="250" cy="216" r="28" fill="url(#lawGlow)" fill-opacity="0.2"/>
+  <path d="M240 216H260" stroke="#F0B429" stroke-width="6" stroke-linecap="round"/>
+  <path d="M250 206V226" stroke="#45D6B6" stroke-width="6" stroke-linecap="round"/>
+  <rect x="400" y="160" width="140" height="26" rx="13" fill="#F0B429"/>
+  <rect x="420" y="186" width="30" height="90" rx="12" fill="#F0B429"/>
+  <path d="M420 248L520 248" stroke="#45D6B6" stroke-width="8" stroke-linecap="round"/>
+  <rect x="460" y="210" width="90" height="26" rx="13" fill="#45D6B6"/>
+</svg>

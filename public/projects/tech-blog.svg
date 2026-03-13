@@ -1,0 +1,18 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blogGlow" x1="70" y1="60" x2="570" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0B429"/>
+      <stop offset="1" stop-color="#45D6B6"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="592" height="372" rx="44" fill="#0D0F12"/>
+  <rect x="24" y="24" width="592" height="372" rx="44" stroke="url(#blogGlow)" stroke-width="4"/>
+  <rect x="140" y="110" width="260" height="220" rx="18" fill="#14181F" stroke="#F0B429" stroke-width="4"/>
+  <path d="M170 150H340" stroke="#45D6B6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M170 182H320" stroke="#F0B429" stroke-width="6" stroke-linecap="round"/>
+  <path d="M170 214H300" stroke="#45D6B6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M170 246H280" stroke="#F0B429" stroke-width="6" stroke-linecap="round"/>
+  <rect x="420" y="140" width="120" height="40" rx="12" fill="#F0B429"/>
+  <rect x="420" y="196" width="120" height="40" rx="12" fill="#45D6B6"/>
+  <rect x="420" y="252" width="120" height="40" rx="12" fill="#F0B429"/>
+</svg>

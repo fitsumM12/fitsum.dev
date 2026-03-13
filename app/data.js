@@ -88,7 +88,8 @@ export const projects = [
       "Contributed to documentation and unit testing."
     ],
     environment:
-      "TensorFlow, NVIDIA GPU, Python, ReactJS, Django, Tailwind, Material UI"
+      "TensorFlow, NVIDIA GPU, Python, ReactJS, Django, Tailwind, Material UI",
+    image: "/projects/ai-screening.svg"
   },
   {
     name: "Attorney Office Case Management",
@@ -102,7 +103,8 @@ export const projects = [
       "Handled client communication and feature alignment."
     ],
     environment:
-      "Python, ReactJS, Django, Tailwind, Material UI, Airflow, Apache Superset"
+      "Python, ReactJS, Django, Tailwind, Material UI, Airflow, Apache Superset",
+    image: "/projects/legal-case.svg"
   },
   {
     name: "Medical Data Analysis using PowerBI",
@@ -114,7 +116,7 @@ export const projects = [
       "Designed KPI-focused dashboards for clinical insights."
     ],
     environment: "PowerBI, Data Modeling",
-    image: "/projects/medical-powerbi.png"
+    image: "/projects/medical-powerbi.svg"
   },
   {
     name: "Human Resource Data Analysis",
@@ -126,7 +128,7 @@ export const projects = [
       "Delivered insights on headcount, attrition, and performance trends."
     ],
     environment: "PowerBI, Data Analysis",
-    image: "/projects/hr-powerbi.png"
+    image: "/projects/hr-analytics.svg"
   },
   {
     name: "Walmart Data Analysis",
@@ -138,7 +140,8 @@ export const projects = [
       "Built interactive dashboards to surface sales and operational trends.",
       "Delivered KPI insights for decision-making."
     ],
-    environment: "PowerBI, Data Analysis"
+    environment: "PowerBI, Data Analysis",
+    image: "/projects/walmart-analytics.svg"
   },
   {
     name: "E-learning Platform",
@@ -150,7 +153,8 @@ export const projects = [
       "Implemented authentication and role-based access for students and instructors.",
       "Designed responsive UI for course consumption and assessments."
     ],
-    environment: "Python, Django, ReactJS, PostgreSQL"
+    environment: "Python, Django, ReactJS, PostgreSQL",
+    image: "/projects/elearning.svg"
   },
   {
     name: "Tech Blog Site",
@@ -162,7 +166,8 @@ export const projects = [
       "Implemented categories, tags, and full-text search.",
       "Deployed the site with CI-friendly workflows."
     ],
-    environment: "ReactJS, Django, PostgreSQL"
+    environment: "ReactJS, Django, PostgreSQL",
+    image: "/projects/tech-blog.svg"
   }
 ];
 
