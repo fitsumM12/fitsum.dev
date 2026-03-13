@@ -6,7 +6,13 @@ import Nav from "./Nav";
 export const metadata = {
   title: "Fitsum Mesfin | AI & Software Engineer",
   description:
-    "Personal portfolio of Fitsum Mesfin, showcasing AI, computer vision, and full-stack engineering experience."
+    "Personal portfolio of Fitsum Mesfin, showcasing AI, computer vision, and full-stack engineering experience.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon.svg", type: "image/svg+xml" }
+    ]
+  }
 };
 
 const navLinks = [

@@ -1,18 +1,51 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="fmGradient" x1="40" y1="40" x2="216" y2="216" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#45D6B6"/>
-      <stop offset="1" stop-color="#F0B429"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0d10" />
+      <stop offset="100%" stop-color="#151b23" />
     </linearGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#45d6b6" />
+      <stop offset="100%" stop-color="#f0b429" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) rotate(90) scale(240)">
+      <stop offset="0%" stop-color="rgba(69,214,182,0.35)" />
+      <stop offset="100%" stop-color="rgba(69,214,182,0)" />
+    </radialGradient>
   </defs>
-  <rect x="24" y="24" width="208" height="208" rx="56" fill="#0D0F12"/>
-  <rect x="24" y="24" width="208" height="208" rx="56" stroke="url(#fmGradient)" stroke-width="8"/>
-  <path
-    d="M84 176V80H164V104H112V120H156V144H112V176H84Z"
-    fill="url(#fmGradient)"
-  />
-  <path
-    d="M172 176V104H200V176H172Z"
-    fill="url(#fmGradient)"
-  />
+
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="url(#bg)" />
+  <rect x="24" y="24" width="464" height="464" rx="96" stroke="url(#stroke)" stroke-width="10" />
+  <circle cx="256" cy="256" r="210" fill="url(#glow)" />
+
+  <!-- spider-net grid -->
+  <g stroke="rgba(240,180,41,0.35)" stroke-width="1">
+    <line x1="96" y1="96" x2="416" y2="96" />
+    <line x1="96" y1="176" x2="416" y2="176" />
+    <line x1="96" y1="256" x2="416" y2="256" />
+    <line x1="96" y1="336" x2="416" y2="336" />
+    <line x1="96" y1="416" x2="416" y2="416" />
+
+    <line x1="96" y1="96" x2="96" y2="416" />
+    <line x1="176" y1="96" x2="176" y2="416" />
+    <line x1="256" y1="96" x2="256" y2="416" />
+    <line x1="336" y1="96" x2="336" y2="416" />
+    <line x1="416" y1="96" x2="416" y2="416" />
+  </g>
+
+  <g stroke="rgba(69,214,182,0.35)" stroke-width="1">
+    <line x1="96" y1="176" x2="336" y2="416" />
+    <line x1="176" y1="96" x2="416" y2="336" />
+    <line x1="96" y1="336" x2="336" y2="96" />
+    <line x1="176" y1="416" x2="416" y2="176" />
+  </g>
+
+  <!-- monogram -->
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
+        font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace"
+        font-size="190" font-weight="700" fill="#f4f6f8" letter-spacing="4">F</text>
+
+  <text x="50%" y="72%" text-anchor="middle" dominant-baseline="central"
+        font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace"
+        font-size="52" letter-spacing="6" fill="#f0b429">FITSUM</text>
 </svg>
