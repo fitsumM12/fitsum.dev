@@ -45,9 +45,9 @@ export default function SkillsPage() {
             </div>
             <div className="skillPills">
               {group.items.map((item) => (
-                <span key={item} className="pillItem">
+                <button key={item} type="button" className="pillItem">
                   {item}
-                </span>
+                </button>
               ))}
             </div>
           </div>

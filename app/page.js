@@ -11,12 +11,20 @@ export default function HomePage() {
               {contact.name}
               <span className="accent">Building production AI systems</span>
             </h1>
-            <p className="summary">
-              Senior AI & Software Engineer with 3+ years of experience delivering production
-              AI systems and full-stack platforms. I design, train, and deploy computer vision
-              models, and build scalable software using React, Django, Docker, and data
-              pipelines.
-            </p>
+            <div className="heroHighlights">
+              <div>
+                <p className="heroHighlightTitle">3+ Years</p>
+                <p>Applied AI and computer vision experience</p>
+              </div>
+              <div>
+                <p className="heroHighlightTitle">Production AI</p>
+                <p>End-to-end model deployment with Docker and REST APIs</p>
+              </div>
+              <div>
+                <p className="heroHighlightTitle">Full Stack</p>
+                <p>React + Django systems with data pipelines</p>
+              </div>
+            </div>
             <div className="ctaRow">
               <a className="primary" href={`mailto:${contact.email}`}>
                 Hire Me

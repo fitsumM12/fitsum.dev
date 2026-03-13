@@ -1,5 +1,5 @@
 import "./globals.css";
-import { CursorGlow } from "./cursor-glow";
+import { SpiderWebBackground } from "./spider-web";
 import { contact } from "./data";
 import Nav from "./Nav";
 
@@ -22,9 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="bgFluid" aria-hidden="true" />
-        <div className="bgGrid" aria-hidden="true" />
-        <CursorGlow />
+        <SpiderWebBackground />
         <header className="shell">
           <Nav links={navLinks} />
         </header>
