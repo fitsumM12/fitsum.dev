@@ -2,8 +2,8 @@
 
 :root {
   --bg: #0d0f12;
-  --surface: #14181f;
-  --surface-strong: #1a202a;
+  --surface: rgba(20, 24, 31, 0.4);
+  --surface-strong: rgba(26, 32, 42, 0.5);
   --text: #f4f6f8;
   --muted: #b7c0cc;
   --accent: #45d6b6;
@@ -36,14 +36,19 @@ body {
   line-height: 1.6;
 }
 
-
 body::before,
-body::after {
+body::after,
+.bgFluid,
+.bgGrid {
   content: "";
   position: fixed;
   inset: -20%;
   pointer-events: none;
-  z-index: 0;
+}
+
+body::before,
+body::after {
+  z-index: 2;
   opacity: 0.7;
 }
 
@@ -67,6 +72,54 @@ body::after {
   opacity: 0.7;
 }
 
+.bgFluid {
+  z-index: 0;
+  opacity: 0.9;
+  background:
+    radial-gradient(
+      42% 36% at 18% 22%,
+      color-mix(in srgb, var(--accent) 70%, transparent) 0%,
+      transparent 62%
+    ),
+    radial-gradient(
+      38% 32% at 78% 28%,
+      color-mix(in srgb, var(--accent-2) 72%, transparent) 0%,
+      transparent 64%
+    ),
+    radial-gradient(
+      44% 40% at 30% 78%,
+      color-mix(in srgb, var(--accent) 55%, transparent) 0%,
+      transparent 66%
+    ),
+    radial-gradient(
+      46% 42% at 72% 76%,
+      color-mix(in srgb, #5bbcff 60%, transparent) 0%,
+      transparent 68%
+    );
+  filter: blur(28px) saturate(1.4) contrast(1.08);
+  mix-blend-mode: lighten;
+  animation: fluidFlow 28s ease-in-out infinite;
+}
+
+.bgGrid {
+  z-index: 1;
+  inset: 0;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.06) 1px,
+      transparent 1px
+    );
+  background-size: 28px 28px;
+  mix-blend-mode: soft-light;
+}
+
 .shell,
 .page,
 .nav,
@@ -75,7 +128,7 @@ header,
 section,
 footer {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 a {
@@ -114,7 +167,7 @@ ul {
   gap: 24px;
   padding: 16px 24px;
   border-radius: 999px;
-  background: rgba(20, 24, 31, 0.75);
+  background: rgba(20, 24, 31, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
   position: sticky;
@@ -327,7 +380,7 @@ h1 {
 }
 
 .heroCard {
-  background: linear-gradient(145deg, rgba(26, 32, 42, 0.92), rgba(15, 18, 25, 0.96));
+  background: linear-gradient(145deg, rgba(26, 32, 42, 0.55), rgba(15, 18, 25, 0.6));
   padding: 28px;
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -369,7 +422,7 @@ h1 {
 }
 
 .sectionArt {
-  background: linear-gradient(150deg, rgba(240, 180, 41, 0.08), rgba(69, 214, 182, 0.08));
+  background: linear-gradient(150deg, rgba(240, 180, 41, 0.12), rgba(69, 214, 182, 0.12));
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 26px;
   padding: 18px;
@@ -704,7 +757,7 @@ h1 {
 .footer {
   margin-top: 40px;
   padding: 60px 4vw 80px;
-  background: linear-gradient(180deg, rgba(13, 15, 18, 0.2), rgba(13, 15, 18, 1));
+  background: linear-gradient(180deg, rgba(13, 15, 18, 0.2), rgba(13, 15, 18, 0.6));
   display: grid;
   gap: 24px;
 }
@@ -776,6 +829,27 @@ h1 {
   }
   100% {
     transform: translate3d(2%, -2%, 0);
+  }
+}
+
+@keyframes fluidFlow {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(4%, -3%, 0) scale(1.06);
+  }
+  66% {
+    transform: translate3d(-3%, 4%, 0) scale(1.03);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bgFluid {
+    animation: none;
   }
 }
 

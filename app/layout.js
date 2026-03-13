@@ -22,6 +22,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <div className="bgFluid" aria-hidden="true" />
+        <div className="bgGrid" aria-hidden="true" />
         <CursorGlow />
         <header className="shell">
           <Nav links={navLinks} />
